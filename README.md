@@ -9,4 +9,4 @@ This project is a task assigned by Credit clan, as flutter test assessment for a
 A few resources to get you started if this is your first Flutter project:
 
 
-
+<img src =  "readMeImages/homeScreenshot.png" width = "380" height = "800">     <img src =  "readMeImages/spendingScreenshot.png" width = "380" height = "800">
