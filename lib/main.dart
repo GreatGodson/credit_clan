@@ -1,12 +1,13 @@
-import 'package:credit_clan_task/components/theme.dart';
-import 'package:credit_clan_task/screens/home_screen.dart';
-import 'package:credit_clan_task/screens/onBoarding_screen.dart';
-import 'package:credit_clan_task/screens/spendings_screen.dart';
-import 'package:credit_clan_task/screens/splash_screen.dart';
+import 'package:credit_clan_task/ui/screens/bottom_nav_container/home/home_screen.dart';
+import 'package:credit_clan_task/ui/screens/onBoarding/onBoarding_screen.dart';
+import 'package:credit_clan_task/ui/screens/spendings/spendings_screen.dart';
+import 'package:credit_clan_task/ui/screens/splash/splash_screen.dart';
+import 'package:credit_clan_task/ui/theme/theme.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'components/bottom_nav_bar.dart';
+import 'ui/widgets/components/bottom_nav_bar.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

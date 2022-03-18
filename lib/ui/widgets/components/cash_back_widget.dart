@@ -1,5 +1,5 @@
-import 'package:credit_clan_task/components/text_style.dart';
-import 'package:credit_clan_task/components/theme.dart';
+import 'package:credit_clan_task/ui/widgets/components/text_style.dart';
+import 'package:credit_clan_task/ui/theme/theme.dart';
 import 'package:flutter/material.dart';
 
 class CashBackSafeDepositColumn extends StatelessWidget {
@@ -28,7 +28,7 @@ class CashBackSafeDepositColumn extends StatelessWidget {
             text: title,
             fontSize: 14,
             fontWeight: FontWeight.w500,
-            color: lightDeepBlue,
+            color: lightDeepBlueTheme,
           ),
         ),
         Row(
@@ -38,7 +38,7 @@ class CashBackSafeDepositColumn extends StatelessWidget {
               text: amount,
               fontSize: 24,
               fontWeight: FontWeight.w900,
-              color: deepBlue,
+              color: deepBlueTheme,
             ),
           ],
         ),

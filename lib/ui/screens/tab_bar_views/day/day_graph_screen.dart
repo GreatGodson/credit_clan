@@ -1,8 +1,8 @@
-import 'package:credit_clan_task/components/text_style.dart';
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
-import '../components/theme.dart';
+import '../../../widgets/components/text_style.dart';
+import '../../../theme/theme.dart';
 
 class DayGraphScreen extends StatefulWidget {
   const DayGraphScreen({Key? key}) : super(key: key);
@@ -28,14 +28,14 @@ class _DayGraphScreenState extends State<DayGraphScreen> {
                 enable: true,
                 shouldAlwaysShow: true,
               ),
-              series: <ChartSeries<_SalesData, String>>[
-                SplineSeries<_SalesData, String>(
+              series: <ChartSeries<_SpendingData, String>>[
+                SplineSeries<_SpendingData, String>(
                     color: graphLineTheme,
                     width: 3,
                     splineType: SplineType.cardinal,
                     dataSource: data,
-                    xValueMapper: (_SalesData sales, _) => sales.year,
-                    yValueMapper: (_SalesData sales, _) => sales.sales,
+                    xValueMapper: (_SpendingData sales, _) => sales.year,
+                    yValueMapper: (_SpendingData sales, _) => sales.sales,
                     name: '',
                     // Enable data label
                     dataLabelSettings:
@@ -47,7 +47,7 @@ class _DayGraphScreenState extends State<DayGraphScreen> {
             left: 230,
             child: CircleAvatar(
               radius: 12,
-              backgroundColor: circleAvatarColor,
+              backgroundColor: circleAvatarTheme,
               child: CircleAvatar(
                 backgroundColor: scaffoldBackgroundTheme,
                 radius: 6,
@@ -84,18 +84,18 @@ class _DayGraphScreenState extends State<DayGraphScreen> {
   }
 }
 
-class _SalesData {
-  _SalesData(this.year, this.sales);
+class _SpendingData {
+  _SpendingData(this.year, this.sales);
 
   final String year;
   final double sales;
 }
 
-List<_SalesData> data = [
-  _SalesData('7', 2),
-  _SalesData('8', 4),
-  _SalesData('9', 3),
-  _SalesData('10', 6),
-  _SalesData('11', 4),
-  _SalesData('12', 8),
+List<_SpendingData> data = [
+  _SpendingData('7', 2),
+  _SpendingData('8', 4),
+  _SpendingData('9', 3),
+  _SpendingData('10', 6),
+  _SpendingData('11', 4),
+  _SpendingData('12', 8),
 ];

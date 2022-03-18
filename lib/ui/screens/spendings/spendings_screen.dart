@@ -1,12 +1,12 @@
-import 'package:credit_clan_task/components/text_style.dart';
-import 'package:credit_clan_task/components/theme.dart';
-import 'package:credit_clan_task/screens/week_graph_Screen.dart';
+import 'package:credit_clan_task/ui/widgets/components/youtube_row.dart';
 import 'package:flutter/material.dart';
+import '../../widgets/components/text_style.dart';
+import '../../theme/theme.dart';
+import '../tab_bar_views/week/week_graph_Screen.dart';
 
-import '../components/youtube_row.dart';
-import 'custom_grapg_screen.dart';
-import 'day_graph_screen.dart';
-import 'month_graph_Screen.dart';
+import '../tab_bar_views/custom/custom_grapg_screen.dart';
+import '../tab_bar_views/day/day_graph_screen.dart';
+import '../tab_bar_views/month/month_graph_Screen.dart';
 
 class SpendingScreen extends StatefulWidget {
   static const String id = 'spendings_screen';
@@ -39,7 +39,7 @@ class _SpendingScreenState extends State<SpendingScreen> {
                             text: 'Spendings',
                             fontSize: 18,
                             fontWeight: FontWeight.w700,
-                            color: cardNumberColor),
+                            color: cardNumberTheme),
                       ],
                     ),
                   ),
@@ -48,7 +48,7 @@ class _SpendingScreenState extends State<SpendingScreen> {
                     children: [
                       const Icon(
                         Icons.attach_money_outlined,
-                        color: deepBlue,
+                        color: deepBlueTheme,
                         size: 32,
                       ),
                       const Padding(
@@ -57,7 +57,7 @@ class _SpendingScreenState extends State<SpendingScreen> {
                             text: '2,400.56',
                             fontSize: 30,
                             fontWeight: FontWeight.w900,
-                            color: deepBlue),
+                            color: deepBlueTheme),
                       ),
                       Column(
                         children: [
@@ -78,7 +78,7 @@ class _SpendingScreenState extends State<SpendingScreen> {
                               text: 'vs past month',
                               fontSize: 14,
                               fontWeight: FontWeight.w500,
-                              color: lightDeepBlue),
+                              color: lightDeepBlueTheme),
                         ],
                       ),
                     ],
@@ -99,7 +99,7 @@ class _SpendingScreenState extends State<SpendingScreen> {
                           fontWeight: FontWeight.w700,
                         ),
                         labelColor: scaffoldBackgroundTheme,
-                        unselectedLabelColor: lightDeepBlue,
+                        unselectedLabelColor: lightDeepBlueTheme,
                         indicatorSize: TabBarIndicatorSize.tab,
                         indicator: BoxDecoration(
                           borderRadius: BorderRadius.circular(24),
@@ -148,11 +148,11 @@ class _SpendingScreenState extends State<SpendingScreen> {
                             text: 'Schedule payments',
                             fontSize: 18,
                             fontWeight: FontWeight.w500,
-                            color: dropDownColor),
+                            color: dropDownButtonTheme),
                         Icon(
                           Icons.arrow_forward_ios,
                           size: 18,
-                          color: dropDownColor,
+                          color: dropDownButtonTheme,
                         )
                       ],
                     ),

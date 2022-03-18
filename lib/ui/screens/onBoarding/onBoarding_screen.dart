@@ -1,8 +1,8 @@
-import 'package:credit_clan_task/components/bottom_nav_bar.dart';
-import 'package:credit_clan_task/screens/home_screen.dart';
+import 'package:credit_clan_task/ui/theme/theme.dart';
+import 'package:credit_clan_task/ui/widgets/components/bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 
-import '../components/on_boarding_contents.dart';
+import '../../widgets/components/on_boarding_contents.dart';
 
 class OnBoardingScreen extends StatefulWidget {
   static const String id = 'onBoarding_screen';
@@ -133,8 +133,8 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(200),
           color: currentIndex == index
-              ? const Color.fromRGBO(242, 96, 20, 1)
-              : const Color.fromRGBO(255, 255, 255, 0.3)),
+              ? activeBuildDotTheme
+              : unselectedBuildDotTheme),
     );
   }
 }

@@ -1,6 +1,7 @@
-import 'package:credit_clan_task/screens/chat_screen.dart';
-import 'package:credit_clan_task/screens/home_screen.dart';
-import 'package:credit_clan_task/screens/notification_screen.dart';
+import 'package:credit_clan_task/ui/screens/bottom_nav_container/chat/chat_screen.dart';
+import 'package:credit_clan_task/ui/screens/bottom_nav_container/home/home_screen.dart';
+import 'package:credit_clan_task/ui/screens/bottom_nav_container/notification/notification_screen.dart';
+import 'package:credit_clan_task/ui/theme/theme.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavBar extends StatefulWidget {
@@ -29,10 +30,10 @@ class _BottomNavBarState extends State<BottomNavBar> {
         showSelectedLabels: false,
         showUnselectedLabels: false,
         type: BottomNavigationBarType.fixed,
-        backgroundColor: const Color.fromRGBO(255, 255, 255, 1),
+        backgroundColor: scaffoldBackgroundTheme,
         elevation: 0.0,
-        selectedItemColor: const Color.fromRGBO(93, 12, 225, 1),
-        unselectedItemColor: const Color.fromRGBO(218, 218, 218, 1),
+        selectedItemColor: tabBarTheme,
+        unselectedItemColor: unselectedNavBarTheme,
         iconSize: 30.0,
         currentIndex: currentIndex,
         onTap: (index) => setState(() => currentIndex = index),

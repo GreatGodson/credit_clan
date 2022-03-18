@@ -1,5 +1,5 @@
-import 'package:credit_clan_task/components/text_style.dart';
-import 'package:credit_clan_task/components/theme.dart';
+import 'package:credit_clan_task/ui/widgets/components/text_style.dart';
+import 'package:credit_clan_task/ui/theme/theme.dart';
 import 'package:flutter/material.dart';
 
 class YoutubeGithubWidget extends StatelessWidget {
@@ -31,12 +31,12 @@ class YoutubeGithubWidget extends StatelessWidget {
                 text: title,
                 fontSize: 18,
                 fontWeight: FontWeight.w500,
-                color: deepBlue),
+                color: deepBlueTheme),
             CircularStdText(
                 text: 'Next payment: $amount',
                 fontSize: 12,
                 fontWeight: FontWeight.w400,
-                color: lightDeepBlue),
+                color: lightDeepBlueTheme),
           ],
         ),
         Padding(
@@ -45,14 +45,14 @@ class YoutubeGithubWidget extends StatelessWidget {
             children: const [
               Icon(
                 Icons.attach_money_outlined,
-                color: cardNumberColor,
+                color: cardNumberTheme,
                 size: 20,
               ),
               CircularStdText(
                   text: '3.99/mth',
                   fontSize: 18,
                   fontWeight: FontWeight.w700,
-                  color: cardNumberColor),
+                  color: cardNumberTheme),
             ],
           ),
         ),
