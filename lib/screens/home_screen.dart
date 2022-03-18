@@ -28,6 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 image: AssetImage(
                   'images/homeScreenBackground.png',
                 ),
+                fit: BoxFit.fill,
               ),
             ),
           ),
