@@ -13,4 +13,4 @@ UI design by credit clan on figma: https://www.figma.com/file/FCZxUor6KOEEkdDGxf
 
 | Home Screen | Spending Screen | 
 |    :---:     |     :---:      |  
-| <img src="readMeImages/homeScreenshot.png" width="500">   | <img src="readMeImages/spendingsScreenshot.png" width="500">   |
+| <img src="readMeImages/homeScreenshot.png" width="500">   | <img src="readMeImages/spendingScreenshot.png" width="500">   |
