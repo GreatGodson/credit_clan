@@ -39,21 +39,23 @@ class YoutubeGithubWidget extends StatelessWidget {
                 color: lightDeepBlueTheme),
           ],
         ),
-        Padding(
-          padding: const EdgeInsets.only(left: 50),
-          child: Row(
-            children: const [
-              Icon(
-                Icons.attach_money_outlined,
-                color: cardNumberTheme,
-                size: 20,
-              ),
-              CircularStdText(
-                  text: '3.99/mth',
-                  fontSize: 18,
-                  fontWeight: FontWeight.w700,
-                  color: cardNumberTheme),
-            ],
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsets.only(left: 50),
+            child: Row(
+              children: const [
+                Icon(
+                  Icons.attach_money_outlined,
+                  color: cardNumberTheme,
+                  size: 20,
+                ),
+                CircularStdText(
+                    text: '3.99/mth',
+                    fontSize: 18,
+                    fontWeight: FontWeight.w700,
+                    color: cardNumberTheme),
+              ],
+            ),
           ),
         ),
       ],

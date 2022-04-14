@@ -16,11 +16,9 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: double.infinity,
-      height: double.infinity,
-      child: Stack(
-        fit: StackFit.expand,
+    return Scaffold(
+      body: Stack(
+        // fit: StackFit.expand,
         children: [
           Container(
             width: MediaQuery.of(context).size.width,
@@ -83,33 +81,37 @@ class _HomeScreenState extends State<HomeScreen> {
                       thickness: 2,
                       color: dividerTheme,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 19),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    SizedBox(
+                      height: 150,
+                      child: ListView(
                         children: [
-                          const CircularStdText(
-                              text: 'Steam Store',
-                              fontSize: 16.0,
-                              fontWeight: FontWeight.w500,
-                              color: deepBlueTheme),
                           Row(
-                            children: const [
-                              CircularStdText(
-                                  text: '-',
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              const CircularStdText(
+                                  text: 'Steam Store',
                                   fontSize: 16.0,
-                                  fontWeight: FontWeight.w700,
-                                  color: debitAmountTheme),
-                              Icon(
-                                Icons.attach_money_outlined,
-                                color: debitAmountTheme,
-                                size: 20,
+                                  fontWeight: FontWeight.w500,
+                                  color: deepBlueTheme),
+                              Row(
+                                children: const [
+                                  CircularStdText(
+                                      text: '-',
+                                      fontSize: 16.0,
+                                      fontWeight: FontWeight.w700,
+                                      color: debitAmountTheme),
+                                  Icon(
+                                    Icons.attach_money_outlined,
+                                    color: debitAmountTheme,
+                                    size: 20,
+                                  ),
+                                  CircularStdText(
+                                      text: '19.99',
+                                      fontSize: 16.0,
+                                      fontWeight: FontWeight.w700,
+                                      color: debitAmountTheme),
+                                ],
                               ),
-                              CircularStdText(
-                                  text: '19.99',
-                                  fontSize: 16.0,
-                                  fontWeight: FontWeight.w700,
-                                  color: debitAmountTheme),
                             ],
                           ),
                         ],

@@ -10,7 +10,7 @@ class NotificationScreen extends StatefulWidget {
 class _NotificationScreenState extends State<NotificationScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: double.infinity,
       width: double.infinity,
     );
